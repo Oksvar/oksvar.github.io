@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green API workaround</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <input id="idInstance" type="text" placeholder="idInstance">
+            <input id="apiTokenInstance" type="text" placeholder="ApiTokenInstance">
+            <button onclick="getSettings()">getSettings</button>
+            <button onclick="getInstanceStatus()">getStateInstance</button>
+
+            <input id="chatIdMessage" type="text" placeholder="Chat ID" />
+            <input id="message" type="text" placeholder="Message" />
+            <button onclick="postSendMessage()">sendMessage</button>
+
+            <input id="chatIdPic" type="text" placeholder="Chat ID" />
+            <input id ="urlFile" type="text" placeholder="https://my.site.com/img/horse.png" />
+            <button onclick="postSendFileByURL()">sendFileByUrl</button>
+        </div>
+
+        <div class="right-panel">
+            <div id="output" class="output-box"></div>
+        </div>
+    </div>
+<script src="JavaScript.js"></script>
+</body>
+</html>
